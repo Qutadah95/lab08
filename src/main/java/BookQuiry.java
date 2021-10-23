@@ -1,3 +1,9 @@
+import com.google.gson.Gson;
+
+import java.io.FileReader;
+import java.util.Arrays;
+import java.util.List;
+
 public class BookQuiry {
 private String author;
     private String likes;
@@ -41,4 +47,6 @@ private String author;
                 ", text='" + text + '\'' +
                 '}';
     }
+
+
 }
