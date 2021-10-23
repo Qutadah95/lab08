@@ -3,6 +3,7 @@ import com.google.gson.Gson;
 import java.io.FileReader;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
 
 public class BookQuiry {
 private String author;
@@ -14,6 +15,8 @@ private String author;
         this.likes = likes;
         this.text = text;
     }
+
+
 
     public String getAuthor() {
         return author;
