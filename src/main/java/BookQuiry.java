@@ -7,12 +7,10 @@ import java.util.Map;
 
 public class BookQuiry {
 private String author;
-    private String likes;
     private String text;
 
-    public BookQuiry(String author, String likes, String text) {
+    public BookQuiry(String author, String text) {
         this.author = author;
-        this.likes = likes;
         this.text = text;
     }
 
@@ -24,14 +22,6 @@ private String author;
 
     public void setAuthor(String author) {
         this.author = author;
-    }
-
-    public String getLikes() {
-        return likes;
-    }
-
-    public void setLikes(String likes) {
-        this.likes = likes;
     }
 
     public String getText() {
@@ -46,7 +36,6 @@ private String author;
     public String toString() {
         return "BookQuiry{" +
                 "author='" + author + '\'' +
-                ", likes='" + likes + '\'' +
                 ", text='" + text + '\'' +
                 '}';
     }
