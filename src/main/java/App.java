@@ -15,10 +15,11 @@ import com.google.gson.Gson;
 public class App {
 
     public static void main(String[] args) throws FileNotFoundException {
+        Gson gson = new Gson();
 BookQuiry book = new BookQuiry("Qutadah","25","dec");
         System.out.println(book);
-        FileReader jsonFile = new FileReader("Countact.json");
-        Gson gson = new Gson();
+        FileReader jsonFile = new FileReader("src/main/java/Countact.json");
+
 //        System.out.println(gson.toJson(book));
 
         String jsonContact = "{\"author\"=\"'Qutadah'\",\"likes\"=\"25\",\"text\"= \"dec\"" +
