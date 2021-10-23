@@ -13,7 +13,7 @@ public class App {
             BookQuiry [] book = gson.fromJson(jsonFile, BookQuiry[].class);
             System.out.println(book.length);
             Random random = new Random();
-            int randomNumber = random.nextInt(100-1) + 1;
+            int randomNumber = random.nextInt(142-1) + 1;
             System.out.println(book[randomNumber]);
         }catch (FileNotFoundException e) {
             e.printStackTrace();
